@@ -37,3 +37,8 @@ img {
     justify-content: center;
     padding: 10px 0px;
 }
+.project_list{
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+}
