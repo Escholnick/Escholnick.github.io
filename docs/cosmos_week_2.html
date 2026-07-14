@@ -23,7 +23,38 @@
             </section>
         </section>
         <section class = "main">
+            <h1>Week 2: Computer Vision Maze Navigator</h1>
 
+            <h2>Design Challenge</h2>
+                <p class = "padded_p">
+                    This week's design challenge was primarily a software one. The goal was to use the car chassis from the previous week, along with a camera, 
+                    to let the robot navigate a maze autonomously, with our only input being neon page-markers placed in the maze for the camera to see. 
+                </p>
+            <h2>General Approach</h2>
+                <p class = "padded_p">
+                    My group's general approach for this project was slightly complicated, but was designed to allow for maximum adaptability once the maze 
+                    was revealed. The basic idea was to use a combination of two different-colored markers to create an arrow, then program the robot to turn 
+                    to be in alignment with that arrow. Combined with nudge functions and a little bit of clever controller programming, hopefully the robot would 
+                    be able to navigate the maze.
+                </p>
+                <p class = "padded_p">
+                    The idea of the arrow was to create a two-note T-shaped structure, with one note of an arbitrary color (let's say orange) as the body of the arrow, 
+                    and a second, different colored note (let's say purple) placed perpedicularly to mark the head of the arrow. The code would detect the centers of the 
+                    two notes, and from there draw a line from orange to purple. It would then turn so that the slope of the line was as steeply positive as possible (
+                    and therefore the arrow was facing straight forward). It would then use nudge functions to center the arrow relative to itself, preform one last 
+                    turn check to be safe, and return to moving forward.
+                </p>
+            <h2>Daily Work</h2>
+                <h3>
+                    Day 1
+                </h3>
+                    <p class = "padded_p">
+                        The majority of day 1 was spent on writing a basic controller class, which would set up the motors and could be used to drive and turn. 
+                        The idea was to make things as easy to write as possible going forward. Most of the rest of the day was spent callibrating the controller so 
+                        that the motors were relatively equal in relation to each other. This was to help prevent the possibility of the robot trying to drive straight but 
+                        actually turning to one side as it went. The last half-hour or so was spent working on the basics of the computer vision element, setting up camera 
+                        windows and such.
+                    </p>
         </section>
         <section class = "footer">
 
