@@ -46,15 +46,23 @@ img {
 .project_list{
     width: 60%;
     align-items: center;
-    text-align: left;
+    text-align: center;
 }
 .project{
     display: block;
-    text-align: left;
+    text-align: center;
 }
-#cosmos_week_1_media{
-    display:flex;
+.image_holder{
+    display: flex;
     flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.image_holder img{
+    vertical-align: center;
+    max-width: 20%;
+    margin-bottom: 20px;
 }
 .main .padded_p{
     align-self: last baseline;
