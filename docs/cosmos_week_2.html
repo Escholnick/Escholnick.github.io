@@ -44,6 +44,11 @@
                     and therefore the arrow was facing straight forward). It would then use nudge functions to center the arrow relative to itself, preform one last 
                     turn check to be safe, and return to moving forward.
                 </p>
+                <p class = "padded_p">
+                    There was also a secondary backup plan in place in case the more complicated idea did not work out. It was to do the basic thing and use different 
+                    colors as different turn flags, such that blue meant "left 90", yellow meant "right 90" and so on. The idea was much simpler and easier to implement, 
+                    but had less finesse and controll to it. As it would turn out, this would be the approach we fell back to on Wednesday when things started to go wrong.
+                </p>
             <h2>Daily Work</h2>
                 <h3>
                     Day 1
@@ -54,6 +59,23 @@
                         that the motors were relatively equal in relation to each other. This was to help prevent the possibility of the robot trying to drive straight but 
                         actually turning to one side as it went. The last half-hour or so was spent working on the basics of the computer vision element, setting up camera 
                         windows and such.
+                    </p>
+                <h3>
+                    Day 2
+                </h3>
+                    <p class = "padded_p">
+                        Day 2 was spent on implementing the majority of the computer vision code, settting up color isolation filters and finding centroids. 
+                        There was also a large amount of time dedicated to refactoring the code to be class based and multi-file rather than a mess of spagheti. 
+                        Lots of work was completed, but there wasn't much variety to it. <br> There was also work on getting the computer vision data out and using it 
+                        to turn, though that did not progress particularly well.
+                    </p>
+                <h3>
+                    Day 3
+                </h3>
+                    <p class = "padded_p">
+                        Day 3 was largely spent bug-fixing and redoing the half-finished turning code so that there wasn't huge slow waits every time the 
+                        robot tried to turn. We were able to fix that bug, but due to a prevlence of other bugs we switched to a backup script that turned at a 
+                        variety of angles based on which colors it saw. The remainder of the day was spent testing and improving this backup script.
                     </p>
         </section>
         <section class = "footer">
