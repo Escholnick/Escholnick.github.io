@@ -17,19 +17,20 @@ body{
 }
 .header section{
     justify-content: center;
+    text-align: center;
 }
 .header h1{
-    margin-left: 10%;
+    margin-left: 0%;
     padding: 1%;
     color:green;
     z-index: 1;
     flex-direction: column;
-    background-color: #1E1E1E;
+    background-color: #0a0a0a;
     border-radius: 10px;
 }
 .page .main{
     width: 85%;
-    background-color:#ffffff;
+    background-color: #184b18;
     margin-top: 2%;
     margin-bottom: 3%;
     border-radius: 5px;
@@ -41,6 +42,12 @@ body{
     margin-left: 1%;
     margin-right: 1%;
     text-align: left;
+}
+.main a{
+    color:#0a0a0a;
+}
+.main a:visited{
+    color:#0a0a0a;
 }
 .page .footer{
     width: 95%;
@@ -71,7 +78,7 @@ body{
     color: #DEDEDE;
 }
 .nav_list li:hover{
-    background-color: #2E2E2E;
+    background-color: #3E3E3E;
 }
 .uncentered_text{
     text-align: left;
